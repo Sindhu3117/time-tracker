@@ -11,17 +11,30 @@ public class Tracker {
     @Autowired
     private List<TimeEntry> entries;
 
+    /*
+    Add Method
+    */
     public void add(TimeEntry entry) {
         entries.add(entry);
     }
+     /*
+    remove Method
+    @param 
+    */
 
     public void remove(TimeEntry entry) {
         entries.remove(entry);
     }
+     /*
+    size Method
+    */
 
     public int size() {
         return entries.size();
     }
+     /*
+    get Method
+    */
     
 
     public TimeEntry get(int index) {
